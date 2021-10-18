@@ -11,6 +11,7 @@
         }
     }
     &__card{
+        cursor: pointer;
         display: block;
         margin-bottom: 23px;
         @include lg{

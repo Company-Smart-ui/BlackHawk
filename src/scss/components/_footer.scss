@@ -56,9 +56,14 @@
     a{
       display: inline-block;
       padding: 13px;
+      transition: .3s;
       @include md{
         padding: 7px 0;
       }
+      &:hover{
+        background: $accentColor;
+      }
+      
     }
     li{
       display: block;
