@@ -1,4 +1,4 @@
-$nav-btn-color:#c72222;
+$nav-btn-color:#D2EB67;
 $nav-bgc:rgba(0, 0, 0, 0.322);
 $nav-hover:$accentColor;
 
@@ -88,17 +88,34 @@ $nav-hover:$accentColor;
         align-items: center;
         display: flex;
         flex-direction: column;
+        animation: rev .5s ease;
 
         @include nav-desktop {
             display: none;
         }
 
         &_row {
-            transition: 0.2s;
             background-color: $nav-btn-color;
-            height: 3px;
-            width: 100%;
+            height: 8px;
+            width: 8px;
+            transition: 0.2s;
+            border-radius: 50%;
+            position: absolute;
 
+        }
+        &_row.first {
+            top: 13px;
+        }
+        &_row.third {
+            bottom: 13px;
+        }
+        &_row.second {
+            left: 13px;
+            opacity: 0;
+        }
+        &_row.four {
+            right: 13px;
+            opacity: 0;
         }
 
         &__row+&__row {
@@ -106,6 +123,37 @@ $nav-hover:$accentColor;
         }
     }
 }
+.nav__btn.active {
+    .nav__btn_row.second {
+        left: 13px;
+        opacity: 1;
+    }
+    .nav__btn_row.four {
+        right: 13px;
+        opacity: 1;
+    }
+}
+.nav__btn.active {
+    animation: anim .5s ease;
+}
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(-90deg);
+    }
+  }
+  @keyframes rev {
+    0% {
+        transform: rotate(-90deg);
+    }
+    
+    100% {
+        transform: rotate(-180deg);
+    }
+  }
 .nav-open {
     @include nav-mobile {
         .nav {
