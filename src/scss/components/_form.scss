@@ -36,6 +36,18 @@
     }
     select{
         color: #F9F7F280;
+        cursor: pointer;
+        appearance: none;
+    }
+    &__select{
+        position: relative;
+        width: 100%;
+        .polygon{
+            display: block;
+            position: absolute;
+            top: 45%;
+            right: 30px;
+        }
     }
     &__checkbox{
         font-family: $secondFont;
