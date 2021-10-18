@@ -1,18 +1,18 @@
 
 .container {
    margin: 0 auto ;
-   padding: 0 35px;
-   max-width: 1410px; 
+   padding: 0 30px;
+   max-width: 1300px;
    @include xl{
-      padding: 0 20px;
+      padding: 0 90px;
    }
 }
 .container-middle{
-   max-width: 1000px;
+   max-width: 1200px;
    margin: 0 auto;
-   padding: 0 45px;
+   padding: 0 30px;
    @include xl{
-      padding: 0 20px;
+      padding: 0 90px;
    }
 }
 .row { 

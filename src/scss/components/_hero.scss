@@ -5,6 +5,7 @@
     background-size: contain;
     font-family: $accentFont;
     .container{
+        padding: 0 20px;
         position: relative;
     }
     &__title{
@@ -50,13 +51,16 @@
     }
     li{
         margin: 0 20px 0 10px;
-        padding: 0 10px;
+        padding: 0 5px;
         list-style: none;
         @include xl{
             list-style-type: disc;
             &:first-child{
                 list-style: none;
             }
+        }
+        @include xxl{
+            padding: 0 10px;
         }
     }
     &__social{
@@ -99,9 +103,10 @@
         }
     }
     &__button{
-        position: absolute;
+        position: fixed;
         right: 20px;
-        bottom: 25px;
+        z-index: 10;
+        top: 65%;
         width: 60px;
         height: 60px;
         border: 1px solid $accentColor;
@@ -110,6 +115,8 @@
         font-size: 12px;
         color: #000;
         transition: .3s;
+        font-family: $accentFont;
+        font-weight: 700;
         a{
             display: block;
             padding: 15px 5px;
@@ -119,10 +126,16 @@
             color: $accentColor;
         }
     }
-    .hero__location, .hero__button, .hero__social{
+    .hero__location, .hero__social{
         display: none;
         @include lg{
             display: block;
         }
     }
+}
+.hero__button{
+    display: none;
+        @include xl{
+            display: block;
+        }
 }

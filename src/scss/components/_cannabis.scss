@@ -3,9 +3,6 @@
     @include md{
         margin: 70px 0 50px;
     }
-    .container{
-        max-width: 1250px;
-    }
     .sub-title{
         margin-bottom: 15px;
         @include sm{
