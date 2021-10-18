@@ -75,17 +75,21 @@
             width: 50%;
         }
     }
-    &__sub-text{
+    &__link{
         margin: 0;
         margin-top: 35px;
         font-size: 13px;
         font-weight: 700;
+        transition: .3s;
         font-family: $mainFont;
         @include sm{
             font-size: 18px;
         }
         @include md{
             font-size: 24px;
+        }
+        &:hover{
+            color: $accentColor;
         }
     }
     &__img{
@@ -94,9 +98,14 @@
         border-radius: 50%;
         background: #d8d8d8;
         margin-right: 16px;
+        display: flex;
+        align-items: center;
         @include md{
             width: 130px;
             height: 130px;
+        }
+        img{
+            padding: 8px;
         }
     }
 }

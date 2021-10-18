@@ -11,12 +11,17 @@
         }
     }
     &__card{
+        display: block;
         margin-bottom: 23px;
         @include lg{
             width: calc(50% - 36px);
             margin: 0 18px 22px;
         }
-        
+        &:hover{
+            .figure-webp::after{
+                opacity: 0;
+            }
+        }
     }
     &__wrap{
         width: 100%;
@@ -35,6 +40,7 @@
         .figure-webp{
             padding-bottom: calc(505% / 1125 * 100);
             &:after{
+                transition: .4s;
                 position: absolute;
                 top: 0;
                 left: 0;
