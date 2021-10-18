@@ -522,6 +522,8 @@
 </footer>
 <script >
     const templateUrl = '<?php= get_bloginfo("template_url"); ?>';
+
+    document.querySelector(".nav__btn").style.marginRight = `${-(window.innerWidth - document.querySelector("html").offsetWidth)}px`;
  </script>
 
 </div> 
