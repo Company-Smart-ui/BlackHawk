@@ -26,6 +26,9 @@ $header-bgc:rgba(0, 0, 0, .95);
     background-color: $header-bgc;
     transition: 0.3s;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.253); 
+    .container{
+        padding: 0 20px;
+    }
     &__content {
         flex-wrap: wrap;  
         padding: 20px 0;

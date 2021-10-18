@@ -7,15 +7,19 @@ body{
 
 // footer to bottom
 .body , html{
-height: 100%; 
-min-height: 100vh;
+  scroll-behavior: smooth;
+  height: 100%; 
+  min-height: 100vh;
 }
 .header , footer {
   flex-grow: 0;
 }
 .main{
+  max-width: 1500px;
+  margin: 0 auto;
   flex-grow: 1;
   overflow: hidden;
+  position: relative;
 }
 
 .footer-to-bottom{
