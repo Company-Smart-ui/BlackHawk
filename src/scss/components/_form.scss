@@ -1,0 +1,94 @@
+.form{
+    &__item{
+        display: block;
+        border-radius: 2px;
+        border: 1px solid $accentColor;
+        font-family: $secondFont;
+        font-size: 8px;
+        font-weight: 400;
+        padding: 9px 10px;
+        background: transparent;
+        width: 100%;
+        color: #fff;
+        margin-bottom: 11px;
+        &::placeholder{
+            color: #F9F7F280;
+        }
+        @include sm{
+            font-size: 14px;
+            padding: 14px;
+            border-radius: 4px;
+            border: 2px solid $accentColor;
+            margin-bottom: 20px;
+        }
+        @include md{
+            font-size: 18px;
+            padding: 18px;
+            margin-bottom: 30px;
+        }
+        @include xl{
+            border-radius: 7px;
+            border: 3px solid $accentColor;
+            margin-bottom: 40px;
+            font-size: 25px;
+            padding: 25px;
+        }
+    }
+    select{
+        color: #F9F7F280;
+    }
+    &__checkbox{
+        font-family: $secondFont;
+        font-size: 9px;
+        line-height: 1.3;
+        font-weight: 500;
+        margin: 25px 0;
+        @include sm{
+            font-size: 12px;
+            margin: 35px 0;
+        }
+        @include md{
+            font-size: 14px;
+            margin: 50px 0;
+        }
+        @include xl{
+            margin: 70px 0;
+        }
+    }
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $accentColor;
+    border-radius: 3px;
+    margin-right: 17px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    @include sm{
+        margin-right: 23px;
+    }
+    @include md{
+        margin-right: 30px;
+    }
+  }
+.custom-checkbox:checked+label::before {
+    background-color: $accentColor;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    background-size: cover;
+}

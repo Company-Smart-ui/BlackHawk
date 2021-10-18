@@ -1,0 +1,46 @@
+.clients{
+    margin-bottom: 80px;
+    @include sm{
+        margin-bottom: 100px;
+    }
+    @include md{
+        margin-bottom: 150px;
+    }
+    @include xl{
+        margin-bottom: 190px;
+    }
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 -10px;
+        @include sm{
+            margin: 0 -18px;
+        }
+        @include md{
+            margin: 0 -35px;
+        }
+    }
+    &__logo{
+        width: calc(25% - 20px);
+        margin: 10px;
+        text-align: center;
+        @include sm{
+            width: calc(25% - 36px);
+            margin: 18px;
+        }
+        @include md{
+            width: calc(25% - 70px);
+            margin: 30px 35px;
+        }
+        img{
+            max-height: 25px;
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            @include sm{
+                max-height: 84px;
+            }
+        }
+    }
+}

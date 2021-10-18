@@ -2,11 +2,16 @@
 <html lang="ru"> 
 <head>
   <meta charset="UTF-8">
-  <title>Gulp</title>
+  <title>Black Hawk</title>
   <link rel="stylesheet" href="css/main.css"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"  content="page with very interesting content">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  
 </head>
 
 <body class="body">
@@ -17,21 +22,23 @@
     <div class="container ">
         <div class="header__content">
             <div class="header__top">
-                <figure class="header__logo"><a href="./"><img src="images/logo.png" alt="Logo"></a></figure>
+                <figure class="header__logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></figure>
                 <button type="button" class="nav__btn">
-                    <span class="nav__btn__row"></span>
-                    <span class="nav__btn__row"></span>
-                    <span class="nav__btn__row"></span>
+                    <span class="nav__btn_row"></span>
+                    <span class="nav__btn_row"></span>
+                    <span class="nav__btn_row"></span>
                 </button>
             </div>
 
             <nav class="nav">
                 <ul class="nav-menu__wrap">
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="https://github.com/ ">git</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
-                    <li class="menu-item "><a href="# ">link</a></li>
+                    <li class="menu-item"><a href="# ">partners</a></li>
+                    <li class="menu-item"><a href="# ">WHO WE ARE</a></li>
+                    <li class="menu-item"><a href="# ">CLIENTS</a></li>
+                    <li class="menu-item"><a href="# ">SERVICES</a></li>
+                    <li class="menu-item"><a href="cannabis.html">cannabis</a></li>
+                    <li class="menu-item"><a href="work.html">WORK</a></li>
+                    <li class="menu-item menu-item__button"><a href="# ">work with us</a></li>
                 </ul>
             </nav>
             <div class="header__bottom">
@@ -46,242 +53,474 @@
         </div>
     </div>
 </header> 
-
 <link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
 <main class="main">
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
-    </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
-  </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
-</div>
-
-</section>
-
-
-<section>
+  <section class="hero">
     <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
+        <div class="hero__wrapper">
+            <h1 class="hero__title">We Build E-Commerce Solutions <br> That  Deliver Remarkable Results.</h1> 
+            <ul>
+                <li>Content Creation</li>
+                <li>Design & Development</li>
+                <li>Email & Ad Campaigns</li>
+            </ul>
+            <div class="hero__social">
+                <a href="#" target="_blank">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.85536 6.06809L2.17586 7.29359L0.651469 4.864L5.95654 0.932487L5.95654 0.932493L5.95751 0.931759C6.59679 0.445872 7.42798 0.315924 8.1824 0.584067C8.93844 0.852863 9.50737 1.48215 9.70395 2.26836L11.8034 10.665L11.8053 10.6724L11.8082 10.6794C11.8721 10.8317 12.0028 10.873 12.0714 10.8835L12.0717 10.8835C12.1447 10.8946 12.2929 10.8927 12.3995 10.7462L15.0674 7.08076C15.0674 7.08076 15.0674 7.08075 15.0674 7.08075C15.2843 6.78289 15.3219 6.40355 15.1684 6.06816L15.1684 6.06814C15.0147 5.73271 14.7033 5.51587 14.3374 5.4903L12.0489 5.33034L12.2497 4.70269C12.2497 4.70264 12.2498 4.70258 12.2498 4.70253C12.2632 4.6609 12.5948 3.64106 13.3578 2.57471L13.3578 2.5747C14.3976 1.12101 15.7408 0.2779 17.2403 0.122807C18.2148 0.0222277 19.0987 0.255717 19.801 0.793561C20.4793 1.31319 20.8107 1.96441 20.9477 2.30607L21.0405 2.26887L20.9477 2.30607C21.2728 3.11742 21.3566 4.03504 21.1875 4.96019L21.1875 4.96021C21.0315 5.81426 20.6664 6.65478 20.1313 7.39L13.5716 16.4019C12.8712 17.364 11.8152 17.8998 10.6708 17.9C10.4839 17.9 10.2947 17.8856 10.1039 17.8566C8.74597 17.6495 7.6665 16.7443 7.21497 15.4321L7.12041 15.4647L7.21496 15.4321L4.00886 6.11633L3.96478 5.98824L3.85536 6.06809ZM4.47688 4.34392L8.17623 15.0928L8.17623 15.0928C8.50053 16.0348 9.27836 16.688 10.2556 16.837C11.2325 16.9859 12.167 16.5939 12.7522 15.7902L12.7522 15.7902L19.3119 6.77811C20.2346 5.51058 20.5064 3.94647 20.0044 2.69384L20.0044 2.69382C19.9223 2.48898 19.7125 2.05679 19.2947 1.6982C18.8738 1.33701 18.2469 1.05518 17.3436 1.14859C15.2433 1.36554 14.0523 3.21314 13.5378 4.26296L13.4724 4.39636L13.6206 4.40672L14.4074 4.46172L14.4075 4.46172C15.1496 4.51349 15.7786 4.95094 16.0917 5.63414C16.4049 6.31743 16.3284 7.08609 15.887 7.69248L13.2188 11.358C12.9183 11.7709 12.4207 11.9793 11.92 11.903C11.4192 11.8266 11.0043 11.479 10.8376 10.9945L10.8376 10.9944L10.8303 10.9731L8.71705 2.52137L8.71705 2.52135C8.60305 2.06567 8.28496 1.71322 7.84527 1.55699C7.40564 1.40056 6.93838 1.47408 6.56663 1.75794L6.56094 1.76222L6.56037 1.76265L2.09626 5.07087L2.02189 5.12598L2.0711 5.20437L2.39935 5.72732L2.45636 5.81815L2.54298 5.75494L4.47688 4.34392Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.1134 0C6.63856 0 6.32797 0.0110495 5.35596 0.056216C4.38584 0.101576 3.72365 0.258399 3.14424 0.488496C2.5449 0.726153 2.03649 1.04406 1.52997 1.56144C1.02308 2.07863 0.711735 2.59775 0.478224 3.20954C0.252306 3.80135 0.0985304 4.47769 0.0548656 5.46786C0.0113907 6.46036 0 6.77769 0 9.30469C0 11.8317 0.0110113 12.1479 0.0550557 13.1404C0.0996697 14.1309 0.253256 14.8071 0.478414 15.3987C0.711356 16.0107 1.0227 16.5298 1.52941 17.047C2.03573 17.5645 2.54414 17.8832 3.1431 18.1209C3.72289 18.351 4.38527 18.5078 5.3552 18.5532C6.32721 18.5983 6.63761 18.6094 9.11226 18.6094C11.5873 18.6094 11.8969 18.5983 12.869 18.5532C13.8391 18.5078 14.502 18.351 15.0818 18.1209C15.681 17.8832 16.1886 17.5645 16.6949 17.047C17.2018 16.5298 17.5132 16.0107 17.7467 15.3989C17.9707 14.8071 18.1245 14.1307 18.17 13.1405C18.2137 12.148 18.2251 11.8317 18.2251 9.30469C18.2251 6.77769 18.2137 6.46056 18.17 5.46806C18.1245 4.47749 17.9707 3.80135 17.7467 3.20973C17.5132 2.59775 17.2018 2.07863 16.6949 1.56144C16.188 1.04387 15.6812 0.72596 15.0812 0.488496C14.5003 0.258399 13.8377 0.101576 12.8676 0.056216C11.8956 0.0110495 11.5862 0 9.11055 0H9.1134ZM8.29592 1.67678C8.53855 1.67639 8.80927 1.67678 9.1134 1.67678C11.5465 1.67678 11.8349 1.6857 12.7957 1.73028C13.6842 1.77177 14.1664 1.92336 14.4876 2.05071C14.9128 2.21936 15.216 2.42096 15.5348 2.74663C15.8537 3.07229 16.0512 3.38245 16.2167 3.81667C16.3414 4.14427 16.4901 4.63664 16.5305 5.54385C16.5742 6.52472 16.5837 6.81937 16.5837 9.30256C16.5837 11.7857 16.5742 12.0804 16.5305 13.0613C16.4899 13.9685 16.3414 14.4608 16.2167 14.7884C16.0515 15.2227 15.8537 15.5318 15.5348 15.8573C15.2158 16.183 14.913 16.3846 14.4876 16.5532C14.1667 16.6812 13.6842 16.8324 12.7957 16.8739C11.835 16.9184 11.5465 16.9281 9.1134 16.9281C6.68014 16.9281 6.39176 16.9184 5.43114 16.8739C4.54265 16.832 4.06044 16.6804 3.73903 16.553C3.31377 16.3844 3.01002 16.1828 2.69108 15.8571C2.37213 15.5315 2.17469 15.2221 2.00915 14.7877C1.88442 14.4601 1.73577 13.9677 1.69533 13.0605C1.65167 12.0796 1.64293 11.785 1.64293 9.30023C1.64293 6.81549 1.65167 6.52239 1.69533 5.54152C1.73596 4.63432 1.88442 4.14194 2.00915 3.81395C2.17431 3.37973 2.37213 3.06958 2.69108 2.74391C3.01002 2.41825 3.31377 2.21665 3.73903 2.04761C4.06025 1.91967 4.54265 1.76847 5.43114 1.7268C6.27178 1.68803 6.59755 1.67639 8.29592 1.67446V1.67678ZM13.9777 3.22175C13.3739 3.22175 12.8841 3.72129 12.8841 4.33792C12.8841 4.95436 13.3739 5.45449 13.9777 5.45449C14.5814 5.45449 15.0712 4.95436 15.0712 4.33792C15.0712 3.72149 14.5814 3.22136 13.9777 3.22136V3.22175ZM9.1134 4.52634C6.52902 4.52634 4.43368 6.66584 4.43368 9.30469C4.43368 11.9435 6.52902 14.0821 9.1134 14.0821C11.6978 14.0821 13.7924 11.9435 13.7924 9.30469C13.7924 6.66584 11.6976 4.52634 9.11321 4.52634H9.1134ZM9.1134 6.20312C10.7909 6.20312 12.151 7.59166 12.151 9.30469C12.151 11.0175 10.7909 12.4062 9.1134 12.4062C7.43573 12.4062 6.07586 11.0175 6.07586 9.30469C6.07586 7.59166 7.43573 6.20312 9.1134 6.20312Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero__location">
+                <p>Toronto, Canada</p>
+            </div>
+            <div class="hero__location hero__location_right">
+                <p>43° N, &nbsp;&nbsp;&nbsp;&nbsp; 79° W</p>
+            </div>
+            <div class="hero__button">
+                <a href="#">Let’s talk!</a>
+            </div>
         </div>
     </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
-        </div>
-    </div>
+</section>
+  <section class="partners">
+    <div class="container-middle">
+        <h2 class="title">Partners</h2>
+        <p class="sub-title">working with the best in the industry</p>
+        <div class="line"></div>
+        <div class="partners__wrap">
+            <div class="partners__logo">
+    <img src="./images/logo/partners/shopify-expert.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/dutchie.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/greenline.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/jane-logo.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/klaviyo-partner.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/budify.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/alpine.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/springbig.png" alt="logo">
+</div><div class="partners__logo">
+    <img src="./images/logo/partners/headset.png" alt="logo">
 </div>
         </div>
-
- 
- 
-
-    </div> 
-</section>
- 
-
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
     </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
-  </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
-</div>
-
 </section>
-
-
-<section>
+  <section class="team">
+    <div class="container-middle">
+        <h2 class="title">Who We Are</h2>
+         <div class="team__wrapper">
+            <div class="team__col">
+                <h3 class="title">10+</h3>
+                <p class="sub-title">years of experience</p>
+            </div>
+            <div class="team__col">
+                <h3 class="title">$100m+</h3>
+                <p class="sub-title">Earned by clients</p>
+            </div>
+            <div class="team__col">
+                <h3 class="title">120+</h3>
+                <p class="sub-title">projects completed     </p>
+            </div>
+         </div>
+        <div class="team__text">
+            <p>Black Hawk is an award-winning creative growth agency that focuses on the design and development of digital products and solutions for highly regulated industries.</p>
+            <p>Our goal is to bring the best possible team into a situation to accomplish a mission.</p>
+            <p>We’ve helped companies build brands, develop websites and landing pages, produce videos, and create high converting email and advertising campaigns.</p>
+        </div>
+        <div class="team__wrap">
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/christian.png" alt="Christian">
+            </picture>
+        </figure>
+    </div>
+    <p>Christian <span>/ Managing Director</span></p>
+</div>
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/jessica.png" alt="Jessica">
+            </picture>
+        </figure>
+    </div>
+    <p>Jessica <span>/ Creative Director</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/luke.png" alt="Luke">
+            </picture>
+        </figure>
+    </div>
+    <p>Luke <span>/ Head of Tech</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/patrick.png" alt="Patrick">
+            </picture>
+        </figure>
+    </div>
+    <p>Patrick <span>/ Head of Production</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/eugene.png" alt="Eugene">
+            </picture>
+        </figure>
+    </div>
+    <p>Eugene <span>/ UX Designer</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/tiffany.png" alt="Tiffany">
+            </picture>
+        </figure>
+    </div>
+    <p>Tiffany <span>/ SEO & PPC</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/ilya.png" alt="Ilya">
+            </picture>
+        </figure>
+    </div>
+    <p>Ilya <span>/ Design, Branding & Visual Identity</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/kuba.png" alt="Kuba">
+            </picture>
+        </figure>
+    </div>
+    <p>Kuba <span>/ Web Developer</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/viktor.png" alt="Viktor">
+            </picture>
+        </figure>
+    </div>
+    <p>Viktor <span>/ Web Developer</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/chad.png" alt="Chad">
+            </picture>
+        </figure>
+    </div>
+    <p>Chad <span>/ Lead Copywriter</span></p>
+</div> 
+            <div class="team__card">
+    <div class="team__img">
+        <figure class="figure-webp">
+            <picture class="picture-webp">
+                <img src="./images/team/tyhran.png" alt="Tyhran">
+            </picture>
+        </figure>
+    </div>
+    <p>Tyhran <span>/ Graphic Designer</span></p>
+</div> 
+        </div>
+    </div>
+</section>
+  <section class="clients">
+    <div class="container-middle">
+        <h2 class="title">Clients</h2>
+        <p class="sub-title">friends who trust us</p>
+        <div class="line"></div>
+        <div class="clients__wrap">
+            <div class="clients__logo">
+    <img src="./images/logo/clients/bmo.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/bbc.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/vice.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/superette.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/world-bank.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/united-nations.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/eni.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/dutchman.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/perfect-level-master.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/schluter-systems.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/purolator.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/telus.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/ezra.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/nestle.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/vetrina.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/dainolite.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/plantlife.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/house-of-cannabis.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/perfect-level.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/ganjika-house.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/final-docx.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/odyssey.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/muskoka-cannabis.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/rosebud.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/uncle-herbs.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/psychedelicwatr.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/flowjo.png" alt="logo">
+</div><div class="clients__logo">
+    <img src="./images/logo/clients/glow-cannabis.png" alt="logo">
+</div>
+        </div>
+    </div>
+</section>
+  <section class="services">
+    <div class="container-middle">
+        <h2 class="title">Services</h2>
+        <div class="services__entered">
+            Creative Consulting - Strategy and Planning<br>
+            Design & Development - Websites and Applications<br>
+            Content - Copy, Videos and Still images<br>
+            Campaigns - Ads & Emails
+        </div>
+        <p class="sub-title">We work with companies from the ground up, building strategies and brands, and we have also been brought in to help fast growing companies develop the solutions and campaigns they need to scale up.</p>
+    </div>
     <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
-        </div>
+        <div class="services__wrap">
+            <div class="services__card">
+    <div class="services__card-wrap">
+        <time datetime='01/04'>01/04</time>
+        <h3 class="title">web & digital</h3>
+        <p class="services__card-text">We design, develop and manage exceptional e-commerce projects for Fortune 500 companies, cannabis brands and retailers, as well as fast growing start ups.<br><br>Since 2017, we have worked with dozens of cannabis companies across North America to develop cannabis e-commerce websites and solutions. We build e-commerce solutions for cannabis brands and cannabis dispensaries to help them increase conversions, improve SEO, and increase revenue.</p>
     </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
-        </div>
-    </div>
+    <ul class="services__list"><li><p>Art Direction</p><p>Mobile App</p></li> <li><p>Web Strategy</p><p>Integrations</p></li> <li><p>Web design</p><p>CMS</p></li> <li><p>UI / UX</p><p>Search Engine Optimization</p></li> <li><p>Development</p><p>Search Engine Advertising</p></li> <li><p>E-Commerce</p><p>Search Engine Marketing</p></li> <li><p>Cannabis Website</p><p>Analysis and Monitoring</p></li></ul>
 </div>
-        </div>
-
- 
- 
-
-    </div> 
-</section>
- 
-
-  <section>
-<div class="container">
-
-    <div class="swiper-container HomepageSwiperInit">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
- 
+            <div class="services__card">
+    <div class="services__card-wrap">
+        <time datetime='02/04'>02/04</time>
+        <h3 class="title">Content Production</h3>
+        <p class="services__card-text">The Black Hawk team has a rich history of storytelling. We are digitally native journalists, directors, producers and content creators who understand how to build content that gets attention among the plethora of content online.<br><br>We have worked on branded videos and documentaries, commercials, and product content campaigns with some of North America’s largest companies, as well as D2C startups.</p>
     </div>
-    <div class="swiper-pagination hp-pagination-init"></div>
-    <div class="swiper-button-prev hp-prev-init"></div>
-    <div class="swiper-button-next hp-next-init"></div>
-  </div>
-
-
-  <style>
-
-    /* remove it */
-
-    .swiper-slide{
-        background-color: rgb(60, 121, 201);
-        padding: 25px;
-        border: solid rgb(196, 136, 136) 1px;
-        background-clip: content-box;
-        height: 300px;
-    }
-  </style>
+    <ul class="services__list"><li><p>Art Direction</p><p>Creative Content</p></li> <li><p>Casting</p><p>Still Life</p></li> <li><p>Styling</p><p>Video Shooting</p></li> <li><p>Production</p><p>Video Editing</p></li> <li><p>Post Production</p><p>Color Correction</p></li></ul>
 </div>
-
+            <div class="services__card">
+    <div class="services__card-wrap">
+        <time datetime='03/04'>03/04</time>
+        <h3 class="title">web & digitaemail managementl</h3>
+        <p class="services__card-text">Email marketing is one of the most powerful channels for cannabis companies and D2C e-commerce companies. Email campaigns can be used to introduce your brand, promote and sell new products, move discounted product out the door, and build customer loyalty.</p>
+    </div>
+    <ul class="services__list"><li><p>A/B Testing</p><p>Welcome Series</p></li> <li><p>Copywriting</p><p>Abandoned Cart Series</p></li><li><p>Branded Design</p><p>Repeat Customer Series</p></li><li><p>Segmentation</p><p>Win Back Series</p></li><li><p>Landing Pages</p></li></ul>
+</div>
+            <div class="services__card">
+    <div class="services__card-wrap">
+        <time datetime='04/04'>04/04</time>
+        <h3 class="title">cannabis</h3>
+        <p class="services__card-text">Cannabis is a heavily regulated industry across North America, and with that, the marketing of cannabis requires an in depth understanding of two important factors. First, what’s legal in your state of province, and secondly, what type of marketing actually drives results for cannabis companies. <br><br>We believe that we are the premiere cannabis e-commerce solutions agency in North America. We’ve built partnerships with the largest cannabis tech companies in the world in order to learn their tools, and understand how to implement them to help our customers.</p>
+    </div>
+    <ul class="services__list"><li><p>Art Direction</p><p>Email Management</p></li> <li><p>Web Strategy</p><p>Mobile</p></li> <li><p>Headless E-Commerce</p><p>App</p></li> <li><p>Webdesign</p><p>Integrations</p></li> <li><p>UI/ UX</p><p>CMS</p></li> <li><p>Development</p><p>Search Engine Optimization</p></li> <li><p>Blog Writing</p><p>Search Engine Advertising</p></li> <li><p>Cannabis Content Creation</p><p>Search Engine Marketing</p></li> <li><p>Affordable E-Commerce</p><p>Analysis and Monitoring</p></li></ul>
+</div> 
+        </div>
+        <div class="services__button">
+            <a href="#" class="button">LEarn more</a>
+        </div>
+    </div>
 </section>
-
-
-<section>
+  <section class="shoutouts">
     <div class="container">
-    
-         <div class="accordion" >
-           <div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Where Are We Located?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    438 Highway 8, Unit 1 / Stoney Creek, Ontario / L8G 1G3 <br> 1527 Marivale Rd / Napean, Ontario / K2K 3J3
-            </p>
+        <h2 class="title">Shoutouts</h2>
+        <p class="sub-title">What our clients say</p>
+        <div class="line"></div>
+        <div class="shoutouts__card">
+    <div class="shoutouts__wrap">
+        <div class="shoutouts__img">
+            <img src="" alt="">
+        </div>
+        <div class="shoutouts__name">
+            <h3>Benjamin Tran</h3>
+            <h4>The House of Cannabis</h4>
         </div>
     </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">What Kind Of Payments Do We Accept</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    We accept Cash, Credit Card, and Debit Card payments.
-            </p>
-        </div>
-    </div>
-</div><div class="accordion__item">
-    <h3 type="button" class="accordion__title-text" tabindex="0">Will I have to show my ID when I receive my order?</h3>
-    <div class="accordion__body">
-        <div class="accordion__content">
-            <p class="accordion__text">
-                    When you arrive at our store, every person must show their ID regardless of age, in order to prove that they are 19+ and can legally purchase cannabis in Ontario. We’re sorry but there are no exceptions to this rule.
-            </p>
-        </div>
+    <div class="shoutouts__context">
+        <p>"They are dynamic and forward thinker throughout the workflow. Our team love the page and the flow. We saw an increase in traffic as well as an increase of people mentioning our site."</p>
+        <p class="shoutouts__sub-text">Read on Clutch</p>
     </div>
 </div>
+        <div class="shoutouts__card">
+    <div class="shoutouts__wrap">
+        <div class="shoutouts__img">
+            <img src="" alt="">
         </div>
-
- 
- 
-
-    </div> 
+        <div class="shoutouts__name">
+            <h3>Frank Germana</h3>
+            <h4>Founder of Glow Cannabis</h4>
+        </div>
+    </div>
+    <div class="shoutouts__context">
+        <p>"Their independence is most impressive. With past vendors, I felt like I had to give constant oversight and provide a lot of content for them to work off of. Christian is a self-starter who brings creative ideas to the table that we hadn’t even thought of. It’s very refreshing. I can trust Black Hawk to get the job down without having to constantly micromanage the project."</p>
+        <p class="shoutouts__sub-text">Read on Clutch</p>
+    </div>
+</div>
+        <div class="shoutouts__card">
+    <div class="shoutouts__wrap">
+        <div class="shoutouts__img">
+            <img src="" alt="">
+        </div>
+        <div class="shoutouts__name">
+            <h3>Tom Biec</h3>
+            <h4>Owner at Perfect Level Master</h4>
+        </div>
+    </div>
+    <div class="shoutouts__context">
+        <p>"In addition to satisfying the internal team, the videos lead to a substantial leap in sales for the business each time they’re released. All of the videos are linked back to our Shopify site, and we always see at least a 25% increase in sales after a video is released. Our internal team is very happy with the work."</p>
+        <p class="shoutouts__sub-text">Read on Clutch</p>
+    </div>
+</div>
+    </div>
 </section>
- 
+  <section class="contact">
+    <div class="container">
+        <h2 class="title">Let’s Talk</h2>
+        <p class="contact__entered">We would love to chat. Send us an email to <a href="hello@blackhawkdigital.co" target="_blank">hello@blackhawkdigital.co</a>, join our social or fill out the form below.</p>
+        <div class="form">
+            <form action="">
+                <input type="text" name="fullName" placeholder="Full Name*" class="form__item" required>
 
+                <input type="email" name="email" placeholder="Email*" class="form__item" required>
+
+                <input type="text" name="companyName" placeholder="Company Name*" class="form__item" required>
+
+                <select name="country" id="country" class="form__item" required>
+                    <option value="Country">Country*</option>
+                </select>
+
+                <select name="service" id="service" class="form__item" required>
+                    <option value="service">Service(s)*</option>
+                </select>
+
+                <select name="budget" id="budget" class="form__item" required>
+                    <option value="budget">Budget*</option>
+                </select>
+                <div class="form__checkbox">
+                    <input type="checkbox" class="custom-checkbox" id="agree">
+                    <label for="agree">
+                        I agree to receive email communications from Black Hawk Digital, it’s affiliates, and it’s marketing partners. By checking this box I understand that I can unsubscribe at anytime by emailing hello@blackhawkdigital.co.
+                    </label>
+                </div>
+                <a href="#" class="button">submit</a>
+            </form>
+        </div>
+    </div>
+</section>
 </main>
 
 <footer id="contact" class="footer">
-<a href="#">back</a>
-
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <div class="footer__logo"><a href="index.html">
+                    <img src="./images/logo-black.png" alt="logo black">
+                </a>
+                </div>
+                <div class="footer__list">
+                    <ul>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Shoutouts </a></li>
+                        <li class="button-item"><a href="#">work with us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="footer__email"><a href="mailto:hello@blackhawkdigital.co">hello@blackhawkdigital.co</a></p>
+                <p class="footer__text-social">Stay up to date.</p>
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1134 0C6.63856 0 6.32797 0.0110495 5.35596 0.056216C4.38584 0.101576 3.72365 0.258399 3.14424 0.488496C2.5449 0.726153 2.03649 1.04406 1.52997 1.56144C1.02308 2.07863 0.711735 2.59775 0.478224 3.20954C0.252306 3.80135 0.0985304 4.47769 0.0548656 5.46786C0.0113907 6.46036 0 6.77769 0 9.30469C0 11.8317 0.0110113 12.1479 0.0550557 13.1404C0.0996697 14.1309 0.253256 14.8071 0.478414 15.3987C0.711356 16.0107 1.0227 16.5298 1.52941 17.047C2.03573 17.5645 2.54414 17.8832 3.1431 18.1209C3.72289 18.351 4.38527 18.5078 5.3552 18.5532C6.32721 18.5983 6.63761 18.6094 9.11226 18.6094C11.5873 18.6094 11.8969 18.5983 12.869 18.5532C13.8391 18.5078 14.502 18.351 15.0818 18.1209C15.681 17.8832 16.1886 17.5645 16.6949 17.047C17.2018 16.5298 17.5132 16.0107 17.7467 15.3989C17.9707 14.8071 18.1245 14.1307 18.17 13.1405C18.2137 12.148 18.2251 11.8317 18.2251 9.30469C18.2251 6.77769 18.2137 6.46056 18.17 5.46806C18.1245 4.47749 17.9707 3.80135 17.7467 3.20973C17.5132 2.59775 17.2018 2.07863 16.6949 1.56144C16.188 1.04387 15.6812 0.72596 15.0812 0.488496C14.5003 0.258399 13.8377 0.101576 12.8676 0.056216C11.8956 0.0110495 11.5862 0 9.11055 0H9.1134ZM8.29592 1.67678C8.53855 1.67639 8.80927 1.67678 9.1134 1.67678C11.5465 1.67678 11.8349 1.6857 12.7957 1.73028C13.6842 1.77177 14.1664 1.92336 14.4876 2.05071C14.9128 2.21936 15.216 2.42096 15.5348 2.74663C15.8537 3.07229 16.0512 3.38245 16.2167 3.81667C16.3414 4.14427 16.4901 4.63664 16.5305 5.54385C16.5742 6.52472 16.5837 6.81937 16.5837 9.30256C16.5837 11.7857 16.5742 12.0804 16.5305 13.0613C16.4899 13.9685 16.3414 14.4608 16.2167 14.7884C16.0515 15.2227 15.8537 15.5318 15.5348 15.8573C15.2158 16.183 14.913 16.3846 14.4876 16.5532C14.1667 16.6812 13.6842 16.8324 12.7957 16.8739C11.835 16.9184 11.5465 16.9281 9.1134 16.9281C6.68014 16.9281 6.39176 16.9184 5.43114 16.8739C4.54265 16.832 4.06044 16.6804 3.73903 16.553C3.31377 16.3844 3.01002 16.1828 2.69108 15.8571C2.37213 15.5315 2.17469 15.2221 2.00915 14.7877C1.88442 14.4601 1.73577 13.9677 1.69533 13.0605C1.65167 12.0796 1.64293 11.785 1.64293 9.30023C1.64293 6.81549 1.65167 6.52239 1.69533 5.54152C1.73596 4.63432 1.88442 4.14194 2.00915 3.81395C2.17431 3.37973 2.37213 3.06958 2.69108 2.74391C3.01002 2.41825 3.31377 2.21665 3.73903 2.04761C4.06025 1.91967 4.54265 1.76847 5.43114 1.7268C6.27178 1.68803 6.59755 1.67639 8.29592 1.67446V1.67678ZM13.9777 3.22175C13.3739 3.22175 12.8841 3.72129 12.8841 4.33792C12.8841 4.95436 13.3739 5.45449 13.9777 5.45449C14.5814 5.45449 15.0712 4.95436 15.0712 4.33792C15.0712 3.72149 14.5814 3.22136 13.9777 3.22136V3.22175ZM9.1134 4.52634C6.52902 4.52634 4.43368 6.66584 4.43368 9.30469C4.43368 11.9435 6.52902 14.0821 9.1134 14.0821C11.6978 14.0821 13.7924 11.9435 13.7924 9.30469C13.7924 6.66584 11.6976 4.52634 9.11321 4.52634H9.1134ZM9.1134 6.20312C10.7909 6.20312 12.151 7.59166 12.151 9.30469C12.151 11.0175 10.7909 12.4062 9.1134 12.4062C7.43573 12.4062 6.07586 11.0175 6.07586 9.30469C6.07586 7.59166 7.43573 6.20312 9.1134 6.20312Z" fill="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                            <desc>Created with Fabric.js 1.7.22</desc>
+                            <defs>
+                            </defs>
+                            <g transform="translate(128 128) scale(0.72 0.72)">
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+                                <path d="M 28.303 81.565 c 33.962 0 52.538 -28.138 52.538 -52.538 c 0 -0.799 0 -1.595 -0.054 -2.387 c 3.614 -2.614 6.733 -5.85 9.212 -9.558 c -3.37 1.493 -6.945 2.473 -10.606 2.905 c 3.855 -2.308 6.74 -5.937 8.118 -10.213 c -3.625 2.151 -7.59 3.667 -11.725 4.482 c -6.993 -7.436 -18.69 -7.795 -26.126 -0.802 c -4.796 4.51 -6.83 11.23 -5.342 17.643 C 29.473 30.352 15.64 23.34 6.264 11.804 c -4.901 8.437 -2.398 19.231 5.717 24.649 c -2.939 -0.087 -5.813 -0.88 -8.381 -2.311 c 0 0.076 0 0.155 0 0.234 c 0.002 8.79 6.198 16.36 14.814 18.101 c -2.718 0.741 -5.571 0.85 -8.338 0.317 c 2.419 7.522 9.351 12.675 17.251 12.823 c -6.539 5.139 -14.616 7.928 -22.932 7.92 C 2.926 73.534 1.459 73.445 0 73.27 c 8.444 5.419 18.27 8.293 28.303 8.28" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9435 7.60335V12.4912H10.2469V7.96541C10.2469 6.87922 9.88738 5.97406 8.80876 5.97406C8.08968 5.97406 7.55036 6.51715 7.37059 7.06025C7.37059 7.24128 7.19082 7.42231 7.19082 7.78438V12.4912H4.49426C4.49426 12.4912 4.49426 4.88786 4.49426 4.16374H7.19082V5.24993C7.55036 4.70683 8.26945 3.80167 9.70761 3.80167C11.5053 3.80167 12.9435 5.0689 12.9435 7.60335ZM1.61794 0C0.719082 0 0 0.543096 0 1.44826C0 2.17238 0.539312 2.89651 1.61794 2.89651C2.51679 2.89651 3.23587 2.17238 3.23587 1.44826C3.0561 0.543096 2.51679 0 1.61794 0ZM0.17977 12.3102H2.87633V3.98271H0.17977V12.3102Z" fill="#1C1D32"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__form">
+                    <form action="">
+                        <label for="footerEmail">
+                            <input type="email" name="email" id="footerEmail" placeholder="Your email">
+                            <button type="submit" class="buttom">Sign Up</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2021 Black Hawk Digital Inc. | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
 </footer>
-
-
 <script >
     const templateUrl = '<?php= get_bloginfo("template_url"); ?>';
  </script>

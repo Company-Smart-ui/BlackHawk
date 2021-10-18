@@ -1,0 +1,128 @@
+.hero{
+    background: url('../images/bg-hero.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+    font-family: $accentFont;
+    .container{
+        position: relative;
+    }
+    &__title{
+        font-size: 19px;
+        margin: 0;
+        margin-bottom: 50px;
+        line-height: 1.2;
+        text-transform: none;
+        @include md{
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        @include xl{
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+    }
+    &__wrapper{
+        padding: 80px 0 70px;
+        max-width: 1060px;
+        margin: 0 auto;
+        @include md{
+            padding: 150px 30px;
+        }
+        @include xl{
+            padding: 200px 30px 190px;
+            margin-bottom: 65px;
+        }
+    }
+    ul{
+        padding: 0;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.6;
+        @include md{
+            font-size: 18px;
+        }
+        @include xl{
+            text-align: left;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    li{
+        margin: 0 20px 0 10px;
+        padding: 0 10px;
+        list-style: none;
+        @include xl{
+            list-style-type: disc;
+            &:first-child{
+                list-style: none;
+            }
+        }
+    }
+    &__social{
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        a{
+            display: block;
+            margin-top: 25px;
+            &:hover{
+                path{
+                    fill: rgba($color: #ffffff, $alpha: 1);
+                }
+            }
+        }
+        svg{
+            width: 18px;
+            height: 18px; 
+        }
+        path{
+            transition: .3s;
+            fill: rgba($color: #ffffff, $alpha: .3);
+        }
+    }
+    &__location{
+        position: absolute;
+        top: 150px;
+        left: -15px;
+        opacity: 0.3;
+        transform: rotate(-90deg);
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $mainFont;
+        &_right{
+            left: auto;
+            right: 0px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    &__button{
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid $accentColor;
+        background: $accentColor;
+        text-align: center;
+        font-size: 12px;
+        color: #000;
+        transition: .3s;
+        a{
+            display: block;
+            padding: 15px 5px;
+        }
+        &:hover{
+            background: transparent;
+            color: $accentColor;
+        }
+    }
+    .hero__location, .hero__button, .hero__social{
+        display: none;
+        @include lg{
+            display: block;
+        }
+    }
+}

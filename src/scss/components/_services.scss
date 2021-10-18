@@ -1,0 +1,165 @@
+.services{
+    margin-bottom: 70px;
+    @include md{
+        margin-bottom: 100px;
+    }
+    @include xl{
+        margin-bottom: 150px;
+    }
+    &__entered{
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        @include sm{
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+        @include xl{
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+    }
+    .sub-title{
+        font-size: 10px;
+        text-transform: none;
+        letter-spacing: normal;
+        opacity: .6;
+        @include sm{
+            font-size: 15px;
+        }
+        @include md{
+            font-size: 21px;
+        }
+    }
+    .container-middle{
+        margin-bottom: 200px;
+    }
+    &__card{
+        margin-bottom: 55px;
+        padding-bottom: 55px;
+        border-bottom: 3px solid #ffffff33;
+        @include md{
+            margin-bottom: 100px;
+            padding-bottom: 100px;
+        }
+        @include xl{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 150px;
+            margin-bottom: 150px;
+        }
+        &:last-child{
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            border: 0;
+        }
+        .title{
+            line-height: 1;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 20px;
+            @include sm{
+                font-size: 35px;
+            }
+            @include md{
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            @include xxl{
+                font-size: 50px;
+            }
+        }
+    }
+    &__card-text{
+        font-size: 10px;
+        margin-bottom: 20px;
+        @include sm{
+            font-size: 14px;
+        }
+        @include md{
+            font-size: 18px;
+        }
+        @include xl{
+            margin-bottom: 0;
+        }
+    }
+    &__card-wrap{
+        @include xl{
+            width: calc(50% - 70px);
+            margin-right: 70px;
+        }
+        @include xxl{
+            width: calc(55% - 70px);
+            margin-right: 70px;
+        }
+    }
+    time{
+        font-family: $accentFont;
+        color: #F9F7F2;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        opacity: .5;
+        display: block;
+        @include sm{
+            font-size: 14px;
+        }
+        @include md{
+            font-size: 16px;
+        }
+    }
+    &__list{
+        width: 100%;
+        color: $accentColor;
+        font-family: $secondFont;
+        opacity: .6;
+        font-size: 10px;
+        font-weight: 400;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include sm{
+            font-size: 14px;
+        }
+        @include md{
+            font-size: 15px;
+        }
+        @include xl{
+            width: 50%;
+        }
+        @include xxl{
+            width: 45%;
+            font-size: 16px;
+        }
+        p{
+            width: 50%;
+            margin: 0;
+            padding-right: 15px;
+            @include sm{
+                padding-right: 5px;
+            }
+        }
+        li{
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #B1B1B1;
+            display: flex;
+            flex-wrap: wrap;
+            &:last-child{
+                border: 0;
+                margin: 0;
+            }
+        }
+    }
+    &__button{
+        width: 100%;
+        margin-top: 30px;
+        @include md{
+            margin: 40px 0 0;
+            width: 50%;
+        }
+    }
+}

@@ -1,23 +1,28 @@
-$main-button:green;
-$main-button-hover:rgb(9, 65, 9);
+$main-button:$accentColor;
  button{
    cursor: pointer;
  }
 .button{
-    width: 100%;
-    display: inline-block;
-    padding:10px 25px;
-    background-color: $main-button;
-    border:solid $main-button;
-    font-size: 24px;
-    color:white;
-    border-radius: 4px;
-      cursor: pointer;
-  }
+  width: 100%;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: $main-button;
+  color:#000;
+  border: 1.4386px solid #F9F7F2;;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0px 0px 19.58px 1px rgba(210, 235, 103, 0.6);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: $accentFont;
+  font-weight: 700;
+  text-align: center;
+}
   
   .button:hover{
-    color:$green;
-    background-color: white;
+    color:$accentColor;
+    background-color: #000;
   }
   
   

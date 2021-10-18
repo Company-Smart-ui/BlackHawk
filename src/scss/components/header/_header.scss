@@ -1,4 +1,4 @@
-$header-bgc:rgb(58, 32, 6);
+$header-bgc:rgba(0, 0, 0, .95);
 @mixin nav-desktop  { 
     @include lg { 
         @content 
@@ -34,7 +34,15 @@ $header-bgc:rgb(58, 32, 6);
         align-items: center;
     } 
     &__logo {
-        width: 50px;
+        background: url('../images/bg-logo.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 21px 10px 0;
+        margin-top: -21px;
+        @include md{
+            width: 180px;
+        }
         img {
             object-fit: contain;
             width: 100%;

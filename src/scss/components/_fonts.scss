@@ -7,3 +7,21 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "DrukWide";
+    src: url("../fonts/DrukWideBold/DrukWideBold.eot");
+    src: url("../fonts/DrukWideBold/DrukWideBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DrukWideBold/DrukWideBold.woff") format("woff"),
+    url("../fonts/DrukWideBold/DrukWideBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "DrukWide";
+    src: url("../fonts/DrukWideMedium/DrukWideMedium.eot");
+    src: url("../fonts/DrukWideMedium/DrukWideMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/DrukWideMedium/DrukWideMedium.woff") format("woff"),
+    url("../fonts/DrukWideMedium/DrukWideMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}

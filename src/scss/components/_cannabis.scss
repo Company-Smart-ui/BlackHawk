@@ -1,0 +1,56 @@
+.cannabis{
+    margin: 30px 0;
+    @include md{
+        margin: 70px 0 50px;
+    }
+    .container{
+        max-width: 1250px;
+    }
+    .sub-title{
+        margin-bottom: 15px;
+        @include sm{
+            margin-bottom: 20px;
+        }
+        @include md{
+            margin-bottom: 30px;
+        }
+        @include lg{
+            margin-bottom: 60px;
+        }
+    }
+    &__entered{
+        text-align: center;
+        max-width: 750px;
+        margin: 0 auto 50px;
+        font-size: 15px;
+        font-weight: 400;
+        @include md{
+            font-size: 18px;
+            margin: 0 auto 50px;
+        }
+        @include xl{
+            font-size: 21px;
+        }
+    }
+    &__button{
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 21px;
+        color: $accentColor;
+        font-family: $accentFont;
+        text-transform: none;
+        margin: 50px auto;
+        line-height: 1.2;
+        max-width: 750px;
+        @include md{
+            font-size: 28px;
+            margin-bottom: 55px;
+        }
+        @include xl{
+            font-size: 35px;
+            margin-bottom: 75px;
+        }
+    }
+}

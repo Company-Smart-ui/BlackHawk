@@ -1,6 +1,219 @@
-footer{
-  padding: 20px 10px 30px 10px;
-  background-color:#000;
-  color:white;
+.footer{
+  padding: 55px 0 35px;
+  background-color: #FEFFFA;
+  color: #132A3F;
+  text-align: center;
+  @include md{
+    text-align: left;
+    padding: 80px 0 35px;
+  }
+  &__wrapper{
+    padding-bottom: 50px;
+    @include md{
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__left{
+    @include md{
+      width: 50%;
+    }
+  }
+  &__wrap{
+    @include lg{
+      display: flex;
+    }
+  }
+  &__logo{
+    display: none;
+    @include md{
+      display: block;
+      width: 315px;
+      margin-bottom: 50px;
+    }
+  }
+  &__list{
+    list-style: none;
+    font-size: 29px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    @include md{
+      display: flex;
+      text-transform: none;
+      font-weight: 700;
+      font-size: 16px;
+
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      @include md{
+        padding-right: 30px;
+      }
+    }
+    a{
+      display: inline-block;
+      padding: 13px;
+      @include md{
+        padding: 7px 0;
+      }
+    }
+    li{
+      display: block;
+      padding: 0;
+      &.button-item{
+        a{
+          margin-top: 10px;
+          padding: 20px 30px;
+          border: 1px solid #000;
+        }
+        @include md{
+          display: none;
+        }
+      }
+    }
+  }
+  &__right{ 
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+    font-style: 18px; 
+    margin-bottom: 30px;
+    @include md{
+      width: 440px;
+      text-align: right;
+    }
+  }
+  &__text-social{
+    width: 100%;
+    font-family: $accentFont;
+    margin-bottom: 10px;
+    @include md{
+      margin-bottom: 0;
+      width: 50%; 
+    }
+  }
+  &__email{
+    width: 100%;
+    margin-bottom: 70px;
+    font-size: 18px;
+    @include md{
+      margin-bottom: 55px; 
+    }
+    a{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    order: 1;
+    @include md{
+      order: 0;
+      margin: 0;
+    }
+    a{
+      display: flex;
+      padding: 5px;
+      margin: 0 20px;
+      &:hover{
+        path{
+          fill: $accentColor !important;
+        }
+      }
+      @include md{
+        margin: 0 6px;
+      }
+      svg{
+        width: 30px;
+        height: 30px;
+        path{
+          transition: .3s;
+          fill:#1C1D32 !important;
+        }
+        @include md{
+          svg{
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+  &__form{
+    width: 100%;
+    margin-bottom: 60px;
+    @include md{
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+    label{
+      text-align: left;
+      width: 100%;
+      padding: 4px 6px;
+      @include md{
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-shadow: 0px 0px 35px rgba(71, 79, 181, 0.05);
+        border-radius: 5px;
+        display: flex;
+      }
+    }
+    input{
+      padding: 15px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #E6E6E6;
+      box-shadow: 0px 0px 35px rgba(71, 79, 181, 0.05);
+      border-radius: 5px;
+      margin-bottom: 12px;
+      &::placeholder{
+        color: #CCCED6;
+      }
+      @include md{
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        width: calc(100% - 140px);
+        margin-bottom: 0;
+      }
+    }
+    button{
+      border: 1px solid $accentColor;
+      width: 130px;
+      margin-left: auto;
+      padding: 14px;
+      text-align: center;
+      background: $accentColor;
+      font-family: $accentFont;
+      font-size: 11px;
+      border-radius: 5px;
+      transition: .3s;
+      &:hover{
+        background: transparent;
+        color: $accentColor;
+      }
+    }
+  }
+  &__copyright{
+    font-family: $secondFont;
+    font-size: 10px;
+    @include md{
+      font-size: 12px;
+    }
+    a{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
 }
  

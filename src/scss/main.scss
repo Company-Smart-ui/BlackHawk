@@ -1,8 +1,8 @@
  
   @use 'sass:math';
 
-  @import 'components/base';  
   @import 'components/_var';   
+  @import 'components/base';  
    @import 'components/header/header';
    @import 'components/grid';
    @import 'components/sections';
@@ -11,7 +11,18 @@
    @import 'components/fonts';
    @import 'components/footer';
    @import 'components/popup'; 
-   @import 'components/list';   
+   @import 'components/list';  
+   @import 'components/hero'; 
+   @import 'components/partners'; 
+   @import 'components/team'; 
+   @import 'components/clients'; 
+   @import 'components/services'; 
+   @import 'components/shoutouts'; 
+   @import 'components/contact'; 
+   @import 'components/form'; 
+   @import 'components/work'; 
+   @import 'components/cannabis'; 
+   @import 'components/privacy'; 
 
 
 
