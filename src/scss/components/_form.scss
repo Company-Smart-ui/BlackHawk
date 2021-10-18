@@ -63,15 +63,18 @@
   }
 .custom-checkbox+label {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     user-select: none;
     cursor: pointer;
+    @include md{
+        align-items: center;
+    }
   }
   .custom-checkbox+label::before {
     content: '';
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid $accentColor;
@@ -82,9 +85,13 @@
     background-size: 50% 50%;
     @include sm{
         margin-right: 23px;
+        width: 20px;
+        height: 20px;
     }
     @include md{
         margin-right: 30px;
+        width: 25px;
+        height: 25px;
     }
   }
 .custom-checkbox:checked+label::before {
