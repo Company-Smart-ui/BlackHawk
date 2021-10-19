@@ -14,9 +14,25 @@ window.onload= function(){
       @@include('modules/fixed-header.js')
   
       @@include('lazyscripts.js')
-      @@include('modules/accordion.js')
+      @@include('modules/accordion.js');
 
  
 
-
+(function() {
+  if (document.querySelector('.form')) {
+    const wrap = document.querySelectorAll('.wpcf7-form-control-wrap'),
+          check = document.querySelector('.wpcf7-checkbox'),
+          checkHandler = check.querySelector('input[type="checkbox"]');
+  
+    wrap.forEach(item => {
+      if (item.querySelector('select')) {
+        item.classList.add('polygon')
+      }
+    })
+  
+    check.addEventListener('click', function() {
+      checkHandler.checked = !checkHandler.checked;
+    })
+  }
+})()
 

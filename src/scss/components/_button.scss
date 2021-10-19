@@ -2,7 +2,7 @@ $main-button:$accentColor;
  button{
    cursor: pointer;
  }
-.button{
+.button, input[type='submit'].wpcf7-form-control.wpcf7-submit {
   width: 100%;
   display: inline-block;
   padding: 15px 25px;
@@ -20,7 +20,7 @@ $main-button:$accentColor;
   text-align: center;
 }
   
-  .button:hover{
+  .button:hover, input[type='submit'].wpcf7-form-control.wpcf7-submit:hover{
     color:$accentColor;
     background-color: #000;
   }

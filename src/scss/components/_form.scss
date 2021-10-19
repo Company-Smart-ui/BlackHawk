@@ -1,5 +1,6 @@
+$phColor: #F9F7F280;
 .form{
-    &__item{
+    &__item, input.wpcf7-form-control, select.wpcf7-form-control{
         display: block;
         border-radius: 2px;
         border: 1px solid $accentColor;
@@ -12,7 +13,7 @@
         color: #fff;
         margin-bottom: 11px;
         &::placeholder{
-            color: #F9F7F280;
+            color: $phColor;
         }
         @include sm{
             font-size: 14px;
@@ -34,8 +35,33 @@
             padding: 25px;
         }
     }
-    select{
-        color: #F9F7F280;
+
+    .wpcf7-form-control-wrap.polygon{
+        position: relative;
+        display: block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            border-style: solid;
+            border-width: 6px 4px 0 4px;
+            border-color: #d2eb67 transparent transparent transparent;
+            opacity: .6;
+
+            @include sm {
+                border-width: 16px 10px 0 10px;
+            }
+            @include md {
+                right: 30px;
+            }
+        }
+    }
+
+    select, .wpcf7-select, select.wpcf7-form-control{
+        color: $phColor;
         cursor: pointer;
         appearance: none;
     }
@@ -49,7 +75,8 @@
             right: 30px;
         }
     }
-    &__checkbox{
+    &__checkbox, .wpcf7-checkbox {
+        display: block;
         font-family: $secondFont;
         font-size: 9px;
         line-height: 1.3;
@@ -68,12 +95,12 @@
         }
     }
 }
-.custom-checkbox {
+.custom-checkbox, input[type='checkbox'] {
     position: absolute;
     z-index: -1;
     opacity: 0;
   }
-.custom-checkbox+label {
+.custom-checkbox+label, input[type='checkbox']+.wpcf7-list-item-label {
     display: inline-flex;
     align-items: flex-start;
     user-select: none;
@@ -82,7 +109,7 @@
         align-items: center;
     }
   }
-  .custom-checkbox+label::before {
+  .custom-checkbox+label::before, input[type='checkbox']+.wpcf7-list-item-label::before {
     content: '';
     display: inline-block;
     width: 15px;
@@ -106,7 +133,7 @@
         height: 25px;
     }
   }
-.custom-checkbox:checked+label::before {
+.custom-checkbox:checked+label::before, input[type='checkbox']:checked+.wpcf7-list-item-label::before {
     background-color: $accentColor;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
     background-size: cover;
