@@ -71,8 +71,26 @@ $phColor: #F9F7F280;
         .polygon{
             display: block;
             position: absolute;
-            top: 45%;
+            top: 10%;
             right: 30px;
+            svg{
+                width: 6px;
+                height: 6px;
+                @include sm{
+                    width: 13px;
+                    height: 13px;
+                }
+                @include md{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            @include sm{
+                top: 35%;
+            }
+            @include md{
+                top: 40%;
+            }
         }
     }
     &__checkbox, .wpcf7-checkbox {
