@@ -10,11 +10,24 @@ $phColor: #F9F7F280;
         padding: 9px 10px;
         background: transparent;
         width: 100%;
-        color: #fff;
+        color: $mainColor;
         margin-bottom: 11px;
         &::placeholder{
             color: $phColor;
         }
+        &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
+            border: 1px solid $accentColor;
+            -webkit-text-fill-color: $mainColor;
+            box-shadow: 0 0 0px 1000px #000 inset;
+            transition: background-color 5000s ease-in-out 0s;
+
+            @include sm {
+                border-width: 2px;
+            }
+            @include xl {
+                border-width: 3px;
+            }
+          }
         @include sm{
             font-size: 14px;
             padding: 14px;
