@@ -5,7 +5,7 @@ $header-bgc:rgba(0, 0, 0, .95);
     };  
 }
 @mixin nav-mobile  { 
-    @media (max-width:$lg) { 
+    @media (max-width:$xl) { 
         @content 
     };  
 }
@@ -76,7 +76,6 @@ $header-bgc:rgba(0, 0, 0, .95);
         @include nav-mobile{
             position: fixed;
             animation: 0.2s openHeader   forwards linear ;
-    
             .header{ 
                 &__top{
                     margin-bottom: 30px;

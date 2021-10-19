@@ -15,14 +15,22 @@
     }
     &__wrapper{
         display: flex;
-        margin: 0 -40px 30px;
+        margin-bottom: 30px;
+        @media screen and(min-width: 380px){
+            margin: 0 -20px 30px;
+        }
         @include md{
             margin: 0 -40px 60px;
         }
     }
     &__col{
-            width: calc(33% - 20px);
+        margin: 0 10px;
+        @media screen and(min-width: 380px){
             margin: 0 10px;
+        }
+        @include sm{
+            width: calc(33% - 20px);
+        }
         @include md{
             width: calc(33% - 80px);
             margin: 0 40px;
@@ -35,7 +43,7 @@
         }
         .sub-title{
             color: $mainColor;
-            font-size: 6px;
+            font-size: 7px;
             font-family: $mainFont;
             @include md{
                 font-size: 16px;
@@ -69,16 +77,19 @@
         }
     }
     &__card{
-        width: 95px;
-        padding: 8px;
+        width: 135px;
+        padding: 7px;
         text-align: left;
+        @media screen and(min-width: 380px){
+           width: 110px;
+        }
         @include sm{
             width: 172px;
             padding: 10px 16px;
         }
         p{
             font-family: $secondFont;
-            font-size: 5px;
+            font-size: 9px;
             line-height: 12px;
             @include sm{
                 font-size: 9px;
