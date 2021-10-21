@@ -11,6 +11,9 @@
         font-size: 12px;
         font-weight: 500;
         margin-bottom: 16px;
+        p{
+            margin: 0;
+        }
         @include sm{
             font-size: 20px;
             margin-bottom: 35px;

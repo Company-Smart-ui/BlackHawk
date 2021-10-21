@@ -89,13 +89,20 @@
         }
         p{
             font-family: $secondFont;
-            font-size: 9px;
+            font-size: 8px;
             line-height: 12px;
             @include sm{
-                font-size: 9px;
+                font-size: 10px;
+            }
+            @include md{
+                font-size: 12px;
             }
             span{
+                display: block;
                 color: $accentColor;
+                @include md{
+                    margin-top: 2px;
+                }
             }
         }
     }

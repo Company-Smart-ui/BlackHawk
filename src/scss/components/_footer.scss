@@ -160,6 +160,24 @@
       margin-top: 30px;
       margin-bottom: 0;
     }
+    .wpcf7-spinner{
+      display: none;
+    }
+    .wpcf7-form-control{
+      width: 100%;
+    }
+    .wpcf7-submit{
+      width: 130px !important;
+      margin-left: auto;
+      font-size: 11px !important;
+      text-transform: none !important;
+      cursor: pointer;
+      box-shadow: none !important;
+      border: 1px solid #d2eb67 !important;
+      &:hover{
+        background: transparent !important;
+      }
+    }
     label{
       text-align: left;
       width: 100%;
