@@ -1,0 +1,49 @@
+@@include('html-templates/head.html',{
+    title:'Work | Black Hawk',
+    metadesc:'page with very interesting content'
+  })
+  <link rel="stylesheet" href="css/swiper-bundle.css" class='swiper-delay_js' data-time="5111"></link>
+  <main class="main">
+    <section class="work">
+        <div class="hero__button">
+            <a href="#contact">Let’s talk!</a>
+        </div>
+        <div class="container">
+            <h1 class="title">The Blog</h1>
+            <p class="sub-title">some digital thoughts</p>
+            <div class="line"></div>
+            <div class="work__wrapper">
+                @@include('./html-templates/blog-card.html',{
+                    img:'blackhawk-is-the-toronto-video-production-agency-you-can-trust',
+                    title:'Black Hawk is the Toronto Video Production Agency You Can Trust',
+                    data:'May 28, 2021',
+                })
+                @@include('./html-templates/blog-card.html',{
+                    img:'aerial-video',
+                    title:'Aerial Video',
+                    data:'May 28, 2021',
+                })
+                @@include('./html-templates/blog-card.html',{
+                    img:'documentaries',
+                    title:'Documentaries',
+                    data:'May 28, 2021',
+                })
+                @@include('./html-templates/blog-card.html',{
+                    img:'social-ads',
+                    title:'Social Ads',
+                    data:'May 28, 2021',
+                })
+            </div>
+        </div>
+    </section>
+  </main>
+  
+  @@include('./html-templates/footer.html',{
+  })
+  
+  </div> 
+  
+  <script  src="js/main.js"> </script>
+  </body>
+  
+  </html> 

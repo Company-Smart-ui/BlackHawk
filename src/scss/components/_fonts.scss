@@ -25,3 +25,30 @@
     font-style: normal;
     font-weight: 500;
 }
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Regular.eot");
+    src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-SemiBold.eot");
+    src: url("../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Bold.eot");
+    src: url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
