@@ -87,6 +87,9 @@
             width: 172px;
             padding: 10px 16px;
         }
+        @include md{
+            width: calc( 100%  / 7);
+        }
         p{
             font-family: $secondFont;
             font-size: 8px;
