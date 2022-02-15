@@ -18,14 +18,18 @@ $header-bgc:rgba(0, 0, 0, .95);
 .header {
     z-index: 5;
     max-width: 100%;
-    overflow: hidden;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     background-color: $header-bgc;
     transition: 0.3s;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.253); 
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.253);
+    max-height: 100vh;
+    overflow: hidden;
+    &.nav-open{
+        overflow: auto;
+    }
     .container{
         padding: 0 20px;
     }
@@ -35,6 +39,7 @@ $header-bgc:rgba(0, 0, 0, .95);
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     } 
     &__logo {
         background: url('../images/bg-logo.png');
@@ -42,8 +47,12 @@ $header-bgc:rgba(0, 0, 0, .95);
         background-repeat: no-repeat;
         background-position: top center;
         padding: 21px 10px 0;
-        margin-top: -21px;
-        @include md{
+        width: 180px;
+
+        @include  lg {
+            width: 120px;
+        }
+        @include xxxl{
             width: 180px;
         }
         img {

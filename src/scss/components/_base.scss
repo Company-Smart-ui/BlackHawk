@@ -1,4 +1,9 @@
 
+:root{
+  --mf:'IBM Plex Sans', sans-serif;
+  --af :'DrukWide', monospace;
+  --sf:'IBM Plex Mono', monospace;
+}
 body{
   background-color: rgb(0, 0, 0);
   color: $mainColor;
@@ -130,4 +135,23 @@ p{
 }
   
  
- 
+ .underlined-text{
+   margin: 20px 0;
+   position: relative;
+   &::after{
+     content: '';
+     height: 2px;
+     position: absolute;
+     left: 20%;
+     top: 100%;
+     background-color: $accentColor;
+     right: 20%;
+     margin-top: 5px;
+   }
+ }
+ .center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }

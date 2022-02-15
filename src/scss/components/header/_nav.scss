@@ -31,14 +31,18 @@ $nav-hover:$accentColor;
             pointer-events: all;
             max-height: 100%;
         }
-        li{
+
+    }
+    .menu {
+        &-item{
             font-size: 28px;
             background-color: $nav-bgc;
             transform: translateX(+100%);
-            margin: 10px 0; 
+            margin: 15px 0;
             display: block;
             transition: 0.5s;
-            
+            position: relative;
+
             a{
                 padding: 10px 0px;
                 text-transform: uppercase;
@@ -47,36 +51,70 @@ $nav-hover:$accentColor;
             }
             &:nth-child(2n) {
                 transform: translateX(-100%);
-            } 
-            @include xl {
-                font-size: 12px;
-                margin: 0 5px; 
+            }
+            @include xl{
+                font-size: 10px;
+                margin: 33px 5px 15px 5px;
                 background-color: transparent;
-                transform: none; 
+                transform: none;
                 a{
-                    padding: 15px;
-                } 
+                    padding: 8px;
+                }
                 &:nth-child(2n) {
                     transform: none;
                 }
+
             }
             @include xxl{
-                margin: 0 10px; 
+                font-size: 12px;
             }
             &:hover {
                 background-color: $nav-hover;
                 transition: 0.2s;
                 color: #222;
             }
-            &:last-child{
-                a{
-                    border: 0.5px solid #fff;
-                    padding: 11px 25px !important;
+
+            &-over-text{
+               font-family:  $mainFont;
+                position: absolute;
+                letter-spacing: 0.3px;
+                font-size: 8px;
+                color:$accentColor;
+                bottom:100%;
+                margin-bottom: 6px;
+                left: 0;
+                right: 0;
+                text-align: center;
+
+            }
+            &__button.menu-item {
+                    a{
+                        font-weight: 700;
+                        border: 0.5px solid #fff;
+                        padding: 11px 25px  ;
+                        font-family: $accentFont;
+                        z-index: 55;
+                        font-size:12px;
+                        min-width: 200px;
+
+                    }
+                &.secondary{
+                    a{
+                        background-color: $accentColor ;
+                        color:black;
+                        border: 0.5px solid #000;
+                        &:hover{
+                            background-color: black ;
+                            color: white;
+                            border: 0.5px solid #fff;
+                        }
+                    }
                 }
+
             }
         }
-    }
 
+    }
     
     &__btn {
         background-color: transparent;
@@ -86,7 +124,7 @@ $nav-hover:$accentColor;
         z-index: 10;
         position: absolute;
         right: 25px;
-        top: 0px;
+        top: 23px;
         padding: 0px;
         justify-content: center;
         align-items: center;
@@ -173,9 +211,23 @@ $nav-hover:$accentColor;
                 max-height: 100vh;
             }
 
-            .menu-item {
-                transform: none;
+            .menu {
+                &-item {
+                    transform: none;
+                    &-over-text{
+                        font-size: 12px;
+
+                    }
+                    &__button{
+                        margin-top: 45px;
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+
             }
+
 
             &__btn {
 

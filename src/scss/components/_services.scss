@@ -45,6 +45,7 @@
         }
         @include xl{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-end;
             padding-bottom: 150px;
@@ -72,6 +73,7 @@
                 font-size: 50px;
             }
         }
+
     }
     &__card-text{
         font-size: 10px;
@@ -109,6 +111,29 @@
         }
         @include md{
             font-size: 16px;
+        }
+    }
+    &__bottom-line{
+        width:100%;
+        margin-top: 50px;
+        gap: 20px;
+        font-family: $secondFont;
+        text-transform: uppercase;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        text-align: center;
+        @include lg{
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        align-items: center;
+
+        .button{
+            max-width: 370px;
+            font-size: 11px;
+            min-width: 320px;
         }
     }
     &__list{

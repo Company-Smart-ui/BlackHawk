@@ -46,6 +46,9 @@
   },
   "scripts": {
     "build": "node build.js",
-    "webp": "node webp.js"
+    "webp": "node webp.js",
+    "dev": "gulp",
+    "start": "gulp",
+    "develop": "gulp"
   }
 }

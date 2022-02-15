@@ -1,9 +1,9 @@
-$mainFont: 'IBM Plex Sans', sans-serif;
-$secondFont: 'IBM Plex Mono', monospace;
-$accentFont: 'DrukWide', monospace;
 
 
 
+$mainFont: var(--mf);   //--mf:'IBM Plex Sans', sans-serif;
+$accentFont:  var(--af);  //--af :'DrukWide', monospace;
+$secondFont: var(--sf);   //--sf:'IBM Plex Mono', monospace;
 
 $accentColor: #D2EB67;
 $mainColor: #fff;
