@@ -14,21 +14,24 @@ function addScript(path ,stimeout){
       ) 
 }   
 
-window.addEventListener('load', function(){   
-const mediaQuery2 = window.matchMedia('(max-width: 480px)').matches;  
-let swiperLoadingDelay=1; 
-const swipDelay = document.querySelector('.swiper-delay_js'); 
-if(swipDelay){ 
-  const addtime= parseInt(swipDelay.dataset.time);
-  if(addtime>0){
-    swiperLoadingDelay=1+ addtime/5;
-    if (mediaQuery2) {
-      swiperLoadingDelay =addtime;
-    } 
-      addScript('js/swiper-min.js' , swiperLoadingDelay).addEventListener('load',()=>{
-        addScript('js/slider-init.js' , 0);
-      }) 
-      //swiper loading only if swiper delay datatime > 0
-  }  
-}   
-})
+
+    window.addEventListener('load', function(){
+        const mediaQuery2 = window.matchMedia('(max-width:768px)').matches;
+        let demoLoadingDelay=1;
+        const delay = document.querySelector('.demo-delay_js');
+        console.log(delay)
+        if(delay){
+            const addTime= parseInt(delay.dataset.time);
+            if(addTime>0){
+                demoLoadingDelay=1+ addTime/5;
+                if (mediaQuery2) {
+                    demoLoadingDelay =addTime;
+                }
+                addScript('https://assets.calendly.com/assets/external/widget.js' , demoLoadingDelay)
+
+                //demo loading only if   delay datatime > 0
+            }
+        }
+    })
+
+
